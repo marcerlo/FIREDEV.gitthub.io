@@ -516,17 +516,17 @@ transition: all 0.3s ease;
         
                } 
              .skill .skill--content .rigth .html::before{
-                width: 80%;
+                width: 90%;
                  } 
               .skill .skill--content .rigth .css::before{
-                width: 60%;
+                width: 75%;
                  } 
              
                .skill .skill--content .rigth .javascritp::before{
-                 width: 50%;
+                 width: 40%;
                     } 
                .skill .skill--content .rigth .mysql::before{
-                   width: 70%;
+                   width: 60%;
                     } 
 /*                     
   seccion de proyectos */
