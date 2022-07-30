@@ -519,14 +519,14 @@ transition: all 0.3s ease;
         
                } 
              .skill .skill--content .rigth .html::before{
-                width: 90%;
+                width: 100%;
                  } 
               .skill .skill--content .rigth .css::before{
-                width: 75%;
+                width: 100%;
                  } 
              
                .skill .skill--content .rigth .javascritp::before{
-                 width: 40%;
+                 width: 75%;
                     } 
                .skill .skill--content .rigth .mysql::before{
                    width: 60%;
