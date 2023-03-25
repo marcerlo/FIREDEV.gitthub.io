@@ -36,13 +36,13 @@ $('.menu-btn i').toggleClass("active");
 
 // typing text animation script
 var typed = new Typed(".typing", {
-  strings: ["YouTuber", "Streamer", "Desarrollador web", "Freelancer"],
+  strings: ["Diseñador web", "Programador web", "Desarrollador web", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
 });
 var typed = new Typed(".typing-2", {
-  strings: ["YouTuber", "Streamer", "Desarrolador web", "Freelancer"],
+  strings: ["Diseñador web", "Programador web", "Desarrolador web", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
