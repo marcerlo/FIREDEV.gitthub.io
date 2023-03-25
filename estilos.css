@@ -526,10 +526,10 @@ transition: all 0.3s ease;
                  } 
              
                .skill .skill--content .rigth .javascritp::before{
-                 width: 75%;
+                 width: 80%;
                     } 
                .skill .skill--content .rigth .mysql::before{
-                   width: 60%;
+                   width: 65%;
                     } 
 /*                     
   seccion de proyectos */
