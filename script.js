@@ -42,7 +42,7 @@ var typed = new Typed(".typing", {
   loop: true
 });
 var typed = new Typed(".typing-2", {
-  strings: ["Diseñador web", "Programador web", "Desarrolador web", "Freelancer"],
+  strings: ["Diseñador web", "Programador web", "Desarrollador web", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
