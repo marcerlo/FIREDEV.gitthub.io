@@ -36,13 +36,13 @@ $('.menu-btn i').toggleClass("active");
 
 // typing text animation script
 var typed = new Typed(".typing", {
-  strings: ["Diseñador web", "Programador web", "Desarrollador web", "Freelancer"],
+  strings: ["CEO de FIREDEV","Diseñador web", "Programador web"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
 });
 var typed = new Typed(".typing-2", {
-  strings: ["Diseñador web", "Programador web", "Desarrollador web", "Freelancer"],
+  strings: ["Diseño web", "Programación web", "Sistemas", "Ecommerce", "Apps"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
@@ -72,3 +72,6 @@ $('.carrusel').owlCarousel({
   }
 });
 });
+
+
+
