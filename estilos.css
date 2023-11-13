@@ -1020,7 +1020,9 @@ transition: all 0.3s ease;
                         padding: 10px 20px;
                     }
                     .conteiner--ancho{
-                        max-width: 800px;
+                        max-width:500px;
+                        overflow-y: hidden !important;
+                         /* cambio */
                         
                         
                         
