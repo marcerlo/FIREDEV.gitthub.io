@@ -10,6 +10,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 text-decoration: none;
+user-select: none;
 
 }
 
@@ -95,7 +96,19 @@ color:var(--main-crimson-color);
 
     color:#ffffff;
 }
+/* Modo oscuro */
 
+.modo{
+
+  font-size: 20px;
+  background-color: #ffffff8b;
+  border-radius: 50%;
+  margin-left:25px ;
+  padding: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 /* menu btn  */
 .menu-btn{
 
@@ -162,11 +175,7 @@ transition: all 0.3s ease;
 
  }
  .home .home--container a:hover{
-  box-shadow: 0 0 5px var(--main-crimson-color),
-  0 0 25px var(--main-crimson-color);
-  background-color: var(--main-crimson-color);
-  color: white;
-   
+  box-shadow: 0 0 5px var(--main-crimson-color), 0 0 25px var(--main-crimson-color);   
      }
 
     /* Sobre mi  */
@@ -191,19 +200,7 @@ transition: all 0.3s ease;
 
 
     }
-    .about .about--title::before{
-       
-        content: "";
-        position:absolute;
-        bottom: 0;
-        left: 50%;
-        width: 180px;
-        height: 3px;
-        background: #000000;
-       transform: translateX(-50%);
-
-  
-      }
+ 
       .about .about--title::after{
        
         content: "INNOVACIÓN";
@@ -214,7 +211,7 @@ transition: all 0.3s ease;
         font-size: 20px;
         color: var(--main-crimson-color);
         padding: 5px;
-        background: #ffffff;
+        background: #ffffff00;
        transform: translateX(-50%);
 
   
@@ -294,6 +291,17 @@ transition: all 0.3s ease;
             cursor: pointer;
 
            }
+           .serv--card:hover ,.card:hover{
+            box-shadow: 0 0 10px var(--main-crimson-color),
+            0 0 50px var(--main-crimson-color);
+
+           }
+
+          .card:hover{
+            box-shadow: 0 0 5px var(--main-crimson-color),
+            0 0 25px var(--main-crimson-color);
+
+           }
 
            /* servicios estilos */
 
@@ -316,19 +324,7 @@ transition: all 0.3s ease;
        
        
            }
-           .servicios .serv--title::before{
-              
-               content: "";
-               position:absolute;
-               bottom: 0;
-               left: 50%;
-               width: 180px;
-               height: 3px;
-               background: #ffffff;
-              transform: translateX(-50%);
-       
-         
-             }
+        
              .servicios .serv--title::after{
               
                content: "Lo que hago";
@@ -426,19 +422,7 @@ transition: all 0.3s ease;
         
         
             }
-            .skill .skill--title::before{
-       
-                content: "";
-                position:absolute;
-                bottom: 0;
-                left: 50%;
-                width: 180px;
-                height: 3px;
-                background: #000000;
-               transform: translateX(-50%);
-        
-          
-              }
+           
               .skill .skill--title::after{
                
                 content: "Lo que yo sé";
@@ -448,7 +432,7 @@ transition: all 0.3s ease;
                 font-size: 20px;
                 color: var(--main-crimson-color);
                 padding: 5px;
-                background: #ffffff;
+                background: #ffffff00;
                 transform: translateX(-50%);
         
           
@@ -460,7 +444,7 @@ transition: all 0.3s ease;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
-
+rgba(255, 255, 255, 0)
 
               }
              
@@ -567,19 +551,7 @@ transition: all 0.3s ease;
 
 
 }
-.proyecto .proyecto--title::before{
 
-    content: "";
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #ffffff;
-   transform: translateX(-50%);
-
-
-  }
   .proyecto .proyecto--title::after{
    
     content: "Proyectos";
@@ -697,19 +669,7 @@ transition: all 0.3s ease;
 
 
   }
-  .contact .contact--title::before{
-     
-      content: "";
-      position:absolute;
-      bottom: 0;
-      left: 50%;
-      width: 180px;
-      height: 3px;
-      background: #000000;
-     transform: translateX(-50%);
 
-
-    }
     .contact .contact--title::after{
      
       content: "Contactos";
@@ -720,7 +680,7 @@ transition: all 0.3s ease;
       font-size: 20px;
       color: var(--main-crimson-color);
       padding: 5px;
-      background: #ffffff;
+      background: #ffffff00;
      transform: translateX(-50%);
 
 
@@ -732,7 +692,7 @@ transition: all 0.3s ease;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+rgba(255, 255, 255, 0)
     }
     .contact .contact--contenido .column{
 
@@ -812,10 +772,16 @@ transition: all 0.3s ease;
                 font-size: 17px;
                 font-family: 'Poppins', sans-serif;
                 transition: all 0.3s ease;
+                background-color: #00000000;
             } 
             .contact .right form .field input:focus,
-            .contact .right form .textarea textarea:focus{
+            .contact .right form .textarea textarea:focus, 
+            .contact .right form .field input:hover,
+            .contact .right form .textarea textarea:hover
+             {
                 border-color: crimson;
+                box-shadow: 0 0 5px var(--main-crimson-color),
+                0 0 15px var(--main-crimson-color);
             }
             .contact .right form .textarea textarea{
               padding-top: 10px;
@@ -958,7 +924,9 @@ transition: all 0.3s ease;
     }
  @media(max-width:947px){
   
- 
+        .modo{
+          margin: initial;
+        }
         .menu-btn{
 
            display: block;

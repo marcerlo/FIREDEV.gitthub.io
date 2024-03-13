@@ -31,7 +31,37 @@
  <meta name="google-site-verification" content="J43H4pxzNSL0Cq3k5XNvZCjZVFyzoagoElYc6fJmvvs" />
  <title>FIREDEV SOLUTION </title>
 
+<script>
+    const Modosc = () =>{
+        let mod = document.getElementById("modo");
+        let contenido = document.getElementsByClassName("conte-oscuro");
+        let textBlack = document.getElementsByClassName("text-black");
+        let img = document.getElementById("modo-img");
 
+            if (mod.value ==="☀️") {
+            mod.value ="🌒" 
+            img.style.boxShadow = "15px 15px 50px #dc143c";  
+              Array.from(contenido).forEach(e => {
+                e.style.background = "#111"; 
+            });
+
+            Array.from(textBlack).forEach(e => {
+                e.style.color = "white";
+            });
+
+        } else if(mod.value ==="🌒"){
+            mod.value ="☀️"; 
+            img.style.boxShadow = "initial";  
+            Array.from(contenido).forEach(e => {
+                e.style.background = "white"; 
+            });  
+            Array.from(textBlack).forEach(e => {
+                e.style.color = "black";
+            });
+        }
+        
+    }
+</script>
 
 </head>
 <body>
@@ -51,6 +81,8 @@
       <li><a href="#skill" class="menu-btn">HABILIDADES</a></li>
       <li><a href="#proyecto" class="menu-btn">PROYECTOS</a></li>
       <li><a href="#contact" class="menu-btn">  CONTACTOS</a></li>
+      <li class="menu-btn"><input id="modo" class="modo" onclick="Modosc()" type="button" value="☀️"/></li> 
+
   </ul>
   <!-- Boton de menu de fontaweson -->
   <div class="menu-btn">
@@ -75,19 +107,20 @@
 
 <!-- section sobre mi  -->
 
-<section class="about" id="about">
+<section class="about conte-oscuro" id="about">
 
     <div class="conteiner--ancho">
-        <h1 class="about--title">FIREDEV SOLUTION</h1>
+        <h1 class="about--title text-black">FIREDEV SOLUTION</h1>
         <div class="about--contenido" data-aos="zoom-in">
             <div class="about--columnas">
 
-               <img src="img/WhatsApp Image 2023-03-24 at 23.49.43.jpeg" alt="porta-nico">
+               <img id="modo-img" src="img/WhatsApp Image 2023-03-24 at 23.49.43.jpeg" alt="porta-nico">
             </div>
             <div class="about--descripcion" data-aos="zoom-in">
-                <div class="text">Servicios en  <span class="typing-2"></span></div>
-                <p> ♥ FIREDEV SOLUTION ♥ es un emprendimiento tecnológico innovador que se especializa en el desarrollo de soluciones digitales para diversas necesidades empresariales y educativas. Fundada en 2020, la empresa ha demostrado un crecimiento excepcional y se ha convertido en una referencia en el ámbito tecnológico.</p>
+                <div class="text text-black">Servicios en  <span class="typing-2"></span></div>
+                <p class="text-black"> ♥ FIREDEV SOLUTION ♥ es un emprendimiento tecnológico innovador que se especializa en el desarrollo de soluciones digitales para diversas necesidades empresariales y educativas. Fundada en 2020, la empresa ha demostrado un crecimiento excepcional y se ha convertido en una referencia en el ámbito tecnológico.</p>
                     <a href="/FIREDEV.gitthub.io/document/cv-nico.pdf" target="_blank">Descargar CV</a>
+                    
    
 
             </div>
@@ -135,13 +168,13 @@
 
         <!-- ---section de habilidades--- -->
 
-        <section class="skill" id="skill">
+        <section class="skill conte-oscuro" id="skill">
             <div class="conteiner--ancho">
-                <h2 class="skill--title">Habilidades</h2>
+                <h2 class="skill--title text-black">Habilidades</h2>
                 <div class="skill--content">
                     <div class="column left" data-aos="zoom-in">
-                      <div class="text">Mis habilidades y experiencias.</div>
-                      <p>Cuento con la siguientes habilidades y conocimientos MICROSOFT OFFICE, base de datos MySQL, HTML5, Figma, Github, Eco 3D, javaScript, React y WordPress (Plugins - Elementor).
+                      <div class="text text-black">Mis habilidades y experiencias.</div>
+                      <p class="text-black">Cuento con la siguientes habilidades y conocimientos MICROSOFT OFFICE, base de datos MySQL, HTML5, Figma, Github, Eco 3D, javaScript, React y WordPress (Plugins - Elementor).
                        Actualemente Laboro como Diseñador y Desarollador web Profesional en las empresas ExcelData & ED Creativos. 
                     </p>
 
@@ -151,8 +184,8 @@
                        <!-- SECCION DE HTML -->
                         <div class="skill--bars">
                           <div class="skill--infor">
-                                    <span>HTML</span>
-                                    <span>100%</span>
+                                    <span class="text-black">HTML</span>
+                                    <span class="text-black">100%</span>
 
                                 </div>
                                 <div class="line html"></div>
@@ -163,8 +196,8 @@
                         <div class="skill--bars">
 
                          <div class="skill--infor">
-                             <span>CSS</span>
-                             <span>100%</span>
+                             <span class="text-black">CSS</span>
+                             <span class="text-black">100%</span>
       
                         </div>
                         <div class="line css"></div>
@@ -175,8 +208,8 @@
                         <div class="skill--bars">
 
                          <div class="skill--infor">
-                             <span>WordPress</span>
-                             <span>100%</span>
+                             <span class="text-black">WordPress</span>
+                             <span class="text-black">100%</span>
       
                         </div>
                         <div class="line css"></div>
@@ -186,8 +219,8 @@
                         <!-- SECCCION JAVASCRITP -->
                          <div class="skill--bars">
                          <div class="skill--infor">
-                        <span>JAVASCRITP</span>
-                        <span>100%</span>
+                        <span class="text-black">JAVASCRITP</span>
+                        <span class="text-black">100%</span>
                   
                          </div>
                          <div class="line javascritp"></div>
@@ -196,8 +229,8 @@
                            <!-- SECCCION MySQL-->
                          <div class="skill--bars">
                          <div class="skill--infor">
-                        <span>MYSQL</span>
-                        <span>100%</span>
+                        <span class="text-black">MYSQL</span>
+                        <span class="text-black">100%</span>
                               
                         </div>
                         <div class="line mysql"></div>
@@ -379,33 +412,33 @@
          <!-- seccion de contactos -->
 
          <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact conte-oscuro" id="contact">
         <div class="conteiner--ancho">
-            <h2 class="contact--title">Contactame</h2>
+            <h2 class="contact--title text-black">Contactame</h2>
             <div class="contact--contenido">
                 <div class="column left" data-aos="zoom-in">
-                    <div class="text">Descripción</div>
-                    <p> Disponiblidad del servicio las 24 horas </p>
+                    <div class="text text-black">Descripción</div>
+                    <p class="text-black"> Disponiblidad del servicio las 24 horas </p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
-                                <div class="head">Nombre</div>
-                                <div class="sub-title">Pintado, Nicolas</div>
+                                <div class="head text-black">Nombre</div>
+                                <div class="sub-title text-black">Pintado, Nicolas</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Dirección</div>
-                                <div class="sub-title">Lima, Perú</div>
+                                <div class="head text-black">Dirección</div>
+                                <div class="sub-title text-black">Lima, Perú</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:nicolaspintadotorre@gmail.com" style="color: black;"  target="_blank">
+                                <div class="head text-black">Email</div>
+                                <div class="sub-title"><a class="text-black" href="mailto:nicolaspintadotorre@gmail.com" style="color: black;"  target="_blank">
                                   
                                     nicolaspintadotorre@gmail.com</a></div>
                             </div>
@@ -413,7 +446,7 @@
                     </div>
                 </div>
                 <div class="column right" data-aos="zoom-in">
-                    <div class="text">Mensaje</div>
+                    <div class="text text-black">Mensaje</div>
                     <form action="https://formspree.io/f/mgedvrow"
                     method="POST">
                         <div class="fields">
@@ -467,6 +500,8 @@
     <script>
    particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
     </script>
+
+
 
 
 <script>
