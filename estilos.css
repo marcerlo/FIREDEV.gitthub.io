@@ -473,7 +473,7 @@ transition: all 0.3s ease;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
-rgba(255, 255, 255, 0)
+
 
               }
              
@@ -721,7 +721,7 @@ rgba(255, 255, 255, 0)
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-rgba(255, 255, 255, 0)
+
     }
     .contact .contact--contenido .column{
 
@@ -934,12 +934,7 @@ rgba(255, 255, 255, 0)
             height: 350px;
             width: 350px;
          
-         
-         
              }
-        
-
-
  }
 
     @media(max-width:991px){
@@ -993,10 +988,7 @@ rgba(255, 255, 255, 0)
             display: inline-block;
             margin: 20px 0;
             font-size: 25px;
-           
-
-
-        
+      
             }  
             .home .home--container .tex-2 {
 
@@ -1017,7 +1009,7 @@ rgba(255, 255, 255, 0)
                         padding: 10px 20px;
                     }
                     .conteiner--ancho{
-                        max-width:500px;
+                        /* max-width:500px; */
                         overflow-y: hidden !important;
                          /* cambio */
                         
