@@ -917,7 +917,34 @@ transition: all 0.3s ease;
               filter: brightness(90%);
           }
 
+ /* Estilo para el contenedor de las redes sociales */
+ .redes-sociales {
+  display: flex;
+  gap: 20px; /* Espacio entre los iconos */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+   
+}
 
+/* Estilo para cada icono */
+.redes-sociales a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Redondear los iconos */
+  background-color: #dc143c; /* Fondo rojo */
+  color: white; /* Color blanco para los iconos */
+  font-size: 24px;
+  text-decoration: none; /* Eliminar subrayado */
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  background-color: #b10f2e; /* Efecto hover */
+}
 
 
  /* responsive */
@@ -1036,7 +1063,14 @@ transition: all 0.3s ease;
                         margin-bottom: 20px;
                     }
                 }
-
+          /* Media Query para dispositivos pequeños (móviles) */
+          @media (max-width: 1000px) {
+            .redes-sociales a {
+              width: 38px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+              height: 38px;
+              font-size: 18px; /* Ajustar el tamaño de la fuente */
+            }
+          }
                  
   
  @media(max-width:690px){
@@ -1111,3 +1145,13 @@ transition: all 0.3s ease;
              
           }
         
+
+
+
+@media (max-width: 480px) {
+  .redes-sociales a {
+    width: 35px; /* Ajustar más aún en pantallas muy pequeñas */
+    height: 35px;
+    font-size: 16px;
+  }
+}
