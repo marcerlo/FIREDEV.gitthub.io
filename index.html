@@ -58,6 +58,7 @@
         let contenido = document.getElementsByClassName("conte-oscuro");
         let textBlack = document.getElementsByClassName("text-black");
         let img = document.getElementById("modo-img");
+        let inputblack = document.getElementsByClassName("input-black");
 
             if (mod.value ==="☀️") {
             mod.value ="🌒" 
@@ -69,6 +70,11 @@
             Array.from(textBlack).forEach(e => {
                 e.style.color = "white";
             });
+            
+            Array.from(inputblack).forEach(e => {
+                e.style.color = "white";
+            });
+            
 
         } else if(mod.value ==="🌒"){
             mod.value ="☀️"; 
@@ -77,6 +83,10 @@
                 e.style.background = "white"; 
             });  
             Array.from(textBlack).forEach(e => {
+                e.style.color = "black";
+            });
+
+            Array.from(inputblack).forEach(e => {
                 e.style.color = "black";
             });
         }
@@ -694,17 +704,17 @@
                     method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input class="input-black" type="text" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" name="_replyto" required>
+                                <input class="input-black" type="email" placeholder="Email" name="_replyto" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Servicio" required>
+                            <input class="input-black" type="text" placeholder="Servicio" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" name="message" placeholder="Mensaje." required></textarea>
+                            <textarea class="input-black" cols="30" rows="10" name="message" placeholder="Mensaje." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Enviar mensaje</button>
