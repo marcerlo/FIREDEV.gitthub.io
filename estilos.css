@@ -1,8 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 :root {
-  --main-crimson-color:  #dc143c;
-  
+  --main-crimson-color:  #3533cd;
 }
 *{
 
@@ -16,7 +15,7 @@ user-select: none;
 
 body {
   --sb-track-color: #111111a8;
-  --sb-thumb-color: #dc143c;
+  --sb-thumb-color: var(--main-crimson-color);
   --sb-size: 14px;
 }
 
@@ -30,13 +29,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
+  background: var(--main-crimson-color);
   border-radius: 3px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-      scrollbar-color: var(--sb-thumb-color)
+      scrollbar-color: var(--main-crimson-color)
                      var(--sb-track-color);
   }
 }
@@ -149,13 +148,14 @@ display:none;
 .home{
 
     display:flex;
-    background: url("./img/bann.jpg");
+    background: url("./img/banner-firedev.webp") !important;
     background-repeat: no-repeat;
     height: 100vh;
     color: #ffffff;
     min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed !important;
     font-family: 'Ubuntu',sans-serif;
     
 }
@@ -183,7 +183,8 @@ font-size: 27px;
         }
  .home .home--container .tex-3 span {
      color: var(--main-crimson-color);
-     font-weight: 500;
+     font-weight: 900;
+     text-shadow: 1px 1px 2px black;
      
 
  }
@@ -320,17 +321,17 @@ transition: all 0.3s ease;
             cursor: pointer;
 
            }
-           .serv--card:hover ,.card:hover{
+           .serv--card:hover {
             box-shadow: 0 0 10px var(--main-crimson-color),
             0 0 50px var(--main-crimson-color);
 
            }
 
-          .card:hover{
+          /* .card:hover{
             box-shadow: 0 0 5px var(--main-crimson-color),
             0 0 25px var(--main-crimson-color);
 
-           }
+           } */
 
            /* servicios estilos */
 
@@ -606,7 +607,7 @@ transition: all 0.3s ease;
   }
   .proyecto .carrusel .card:hover{
 
-    background: var(--main-crimson-color)
+    background: var(--main-crimson-color);
     
         
      }
@@ -664,7 +665,7 @@ transition: all 0.3s ease;
       margin: 0 5px;
       outline: none !important;
       border-radius: 50%;
-      border:2px solid crimson !important;
+      border:2px solid var(--main-crimson-color) !important;
 
      }
      .owl-dot.active{
@@ -808,7 +809,7 @@ transition: all 0.3s ease;
             .contact .right form .field input:hover,
             .contact .right form .textarea textarea:hover
              {
-                border-color: crimson;
+                border-color: var(--main-crimson-color);
                 box-shadow: 0 0 5px var(--main-crimson-color),
                 0 0 15px var(--main-crimson-color);
             }
@@ -893,7 +894,7 @@ transition: all 0.3s ease;
               position: fixed;
               height: 45px;
               width: 42px;
-              background: crimson;
+              background: var(--main-crimson-color);
               right: 30px;
               bottom: 10px;
               text-align: center;
@@ -935,7 +936,7 @@ transition: all 0.3s ease;
   width: 50px;
   height: 50px;
   border-radius: 50%; /* Redondear los iconos */
-  background-color: #dc143c; /* Fondo rojo */
+  background-color: var(--main-crimson-color); /* Fondo rojo */
   color: white; /* Color blanco para los iconos */
   font-size: 24px;
   text-decoration: none; /* Eliminar subrayado */
@@ -943,7 +944,7 @@ transition: all 0.3s ease;
 }
 
 .redes-sociales a:hover {
-  background-color: #b10f2e; /* Efecto hover */
+  background-color: var(--main-crimson-color); /* Efecto hover */
 }
 
 
