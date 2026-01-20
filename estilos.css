@@ -584,7 +584,7 @@ transition: all 0.3s ease;
 
   .proyecto .proyecto--title::after{
    
-    content: "Proyectos";
+    content: "Portafolio";
     position:absolute;
     bottom: -12px;
     left: 50%;
