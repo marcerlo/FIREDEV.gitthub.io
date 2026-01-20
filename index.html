@@ -42,6 +42,32 @@
     })(window, document, "clarity", "script", "p35kjnzjpq");
 </script>
 
+<!-- Carrusel nombre a dots para SEO -->
+<script>
+$(document).ready(function () {
+
+  var $carousel = $('.carrusel');
+
+  // Cuando OWL termina de crear el carrusel
+  $carousel.on('initialized.owl.carousel changed.owl.carousel', function () {
+
+    var $dots = $(this).find('.owl-dots .owl-dot');
+
+    $dots.each(function (index) {
+      $(this).attr('aria-label', 'Ir a la diapositiva ' + (index + 1));
+
+      if ($(this).hasClass('active')) {
+        $(this).attr('aria-current', 'true');
+      } else {
+        $(this).removeAttr('aria-current');
+      }
+    });
+
+  });
+
+});
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXXQWTCJ0P"></script>
 <script>
@@ -630,12 +656,47 @@
                         </div>
                         <div class="redes-sociales">
                             <!-- Íconos de redes sociales -->
-                            <a href="https://www.facebook.com/firedev.com.pe/" target="_blank" class="fa-brands fa-facebook"></a>
-                            <a href="https://www.instagram.com/firedev.pe/" target="_blank" class="fa-brands fa-instagram"></a>
-                            <a href="https://www.tiktok.com/@firedev.pe" target="_blank" class="fa-brands fa-tiktok"></a>
-                            <a href="https://x.com/FIRENEKS1" target="_blank" class="fa-brands fa-x-twitter"></a> 
-                            <a href="https://www.linkedin.com/company/firedev-solution/" target="_blank" class="fa-brands fa-linkedin"></a>
-                            <a href="https://www.youtube.com/@firedevsolution" target="_blank" class="fa-brands fa-youtube"></a>
+                            <a href="https://www.facebook.com/firedev.com.pe/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-facebook"
+                               aria-label="Facebook de Firedev">
+                            </a>
+                            
+                            <a href="https://www.instagram.com/firedev.pe/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-instagram"
+                               aria-label="Instagram de Firedev">
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@firedev.pe"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-tiktok"
+                               aria-label="TikTok de Firedev">
+                            </a>
+                            
+                            <a href="https://x.com/FIRENEKS1"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-x-twitter"
+                               aria-label="X (Twitter) de Firedev">
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/company/firedev-solution/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-linkedin"
+                               aria-label="LinkedIn de Firedev">
+                            </a>
+                            
+                            <a href="https://www.youtube.com/@firedevsolution"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="fa-brands fa-youtube"
+                               aria-label="YouTube de Firedev">
+                            </a>
                           </div>
                     </div>
                 </div>
@@ -667,9 +728,15 @@
     </section>
 
     <!-- --telefono-- -->
-    <a href="https://wa.me/+51931118007/?text=Hola%20estoy%20interesado%20en%20sus%20servicios" class="btn-wsp" target="_blank">
-        <i class="fa-brands fa-whatsapp icono"></i>
-    </a>
+  <a href="https://wa.me/+51931118007/?text=Hola%20estoy%20interesado%20en%20sus%20servicios"
+   class="btn-wsp"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp con Firedev">
+   
+   <i class="fa-brands fa-whatsapp icono" aria-hidden="true"></i>
+
+</a>
     <!-- ---footer-- -->
     <footer>
   <p>Copyright © 2024 ❤️ FIREDEV</p>
@@ -688,7 +755,8 @@
 <style>
    #particles-js{  width: 100%; height: 100vh;min-height: 500px; background-color: #11111100; background-image: url("/FIREDEV.gitthub.io/img/bann.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;  } /* ---- stats.js ---- */ 
    
-   .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 100%; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0;  } .count-particles{ border-radius: 0 0 3px 3px; z-index: -10;}
+   .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 100%; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{   -webkit-user-select: none; /* Chrome, Safari */
+  user-select: none;  /* estándar */margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0;  } .count-particles{ border-radius: 0 0 3px 3px; z-index: -10;}
     </style>
   
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

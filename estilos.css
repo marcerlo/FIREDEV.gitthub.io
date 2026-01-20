@@ -948,6 +948,22 @@ transition: all 0.3s ease;
 }
 
 
+/* Desktop: dots visibles */
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Área clicable cómoda en desktop */
+.owl-dots .owl-dot {
+  width: 24px;
+  height: 24px;
+  margin: 0 6px;
+}
+
+
+
  /* responsive */
  @media(max-width:1300px){
 
@@ -964,6 +980,16 @@ transition: all 0.3s ease;
          
              }
  }
+
+ /* ================================
+   TABLET + MOBILE: OCULTAR DOTS
+   ================================ */
+@media (max-width: 1024px) {
+  .owl-dots {
+    display: none !important;
+  }
+}
+
 
     @media(max-width:991px){
       .conteiner--ancho{
