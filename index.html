@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<!-- optimiza carga fuentes -->
+<!-- 🔥 PRECONNECT (conexión más rápida a CDNs) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://unpkg.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
- <!-- --------------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <link rel="stylesheet" href="estilos.css">
- <script  src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<!-- 🔥 GOOGLE FONTS (no bloquea render) -->
+<link rel="preload"
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+as="style"
+onload="this.rel='stylesheet'">
 
- <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
- <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
- <!-- Incluir Font Awesome versión 6.6.0 -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+<!-- 🔥 CSS externos sin bloquear pantalla -->
+<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
- <!-- <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> -->
- <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/marcerlo/Recursos-de-Imagenes@main/assets-portafolio-firedev/favi.webp">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.rel='stylesheet'">
+
+<!-- TU CSS -->
+<link rel="stylesheet" href="estilos.css">
 
 
- <!-- Meta etiquetas -->
- <meta name="Copyright" content="FIREDEV SOLUTION" >
- <meta name="author" content="Nicolas Pintado"> 
- <meta name="description" content="Firedev, fundada en 2020, es un emprendimiento tecnológico innovador que desarrolla soluciones digitales para empresas y educación.">
- <meta name="keywords" content="FIREDEV,NICOLAS PINTADO, PAGINAS WEB, SISTEMAS ">
- <meta name="robots" content="index, follow">
-  <!-- indexación etiquetas -->
- <meta name="google-site-verification" content="J43H4pxzNSL0Cq3k5XNvZCjZVFyzoagoElYc6fJmvvs" />
- <title>FIREDEV - Diseñamos Páginas Webs para Empresas</title>
-  <!-- indexación CLARITY -->
+<!-- favicon -->
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/marcerlo/Recursos-de-Imagenes@main/assets-portafolio-firedev/favi.webp">
 
- <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "p35kjnzjpq");
+<!-- SEO -->
+<meta name="author" content="Nicolas Pintado"> 
+<meta name="description" content="Firedev, fundada en 2020, es un emprendimiento tecnológico innovador que desarrolla soluciones digitales para empresas y educación.">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="J43H4pxzNSL0Cq3k5XNvZCjZVFyzoagoElYc6fJmvvs"/>
+
+<title>FIREDEV - Diseñamos Páginas Webs para Empresas</title>
+
+<!-- Microsoft Clarity -->
+<script>
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "p35kjnzjpq");
 </script>
 
-
-<!-- Google tag (gtag.js) -->
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXXQWTCJ0P"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VXXQWTCJ0P');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VXXQWTCJ0P');
 </script>
-
 
 </head>
 <body>
+<!-- 🔥 JAVASCRIPT diferido (NO bloquea carga) -->
+<script   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
       <!-- Modo Nocturno-->
 <script>
     const Modosc = () =>{
@@ -177,7 +182,7 @@ $(document).ready(function () {
         <div class="about--contenido" data-aos="zoom-in">
             <div class="about--columnas">
 
-               <img id="modo-img" src="https://cdn.jsdelivr.net/gh/marcerlo/Recursos-de-Imagenes@main/assets-portafolio-firedev/nicolas.webp" alt="porta-nico">
+               <img id="modo-img" src="https://cdn.jsdelivr.net/gh/marcerlo/Recursos-de-Imagenes@main/assets-portafolio-firedev/nicolas.avif" alt="porta-nico">
             </div>
             <div class="about--descripcion" data-aos="zoom-in">
                 <div class="text text-black">Servicios en  <span class="typing-2"></span></div>
