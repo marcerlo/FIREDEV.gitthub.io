@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
- <!-- Meta animación -->
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<!-- optimiza carga fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
  <!-- --------------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="estilos.css">
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+ <script  src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+
+ <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
  <!-- Incluir Font Awesome versión 6.6.0 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
@@ -42,31 +46,6 @@
     })(window, document, "clarity", "script", "p35kjnzjpq");
 </script>
 
-<!-- Carrusel nombre a dots para SEO -->
-<script>
-$(document).ready(function () {
-
-  var $carousel = $('.carrusel');
-
-  // Cuando OWL termina de crear el carrusel
-  $carousel.on('initialized.owl.carousel changed.owl.carousel', function () {
-
-    var $dots = $(this).find('.owl-dots .owl-dot');
-
-    $dots.each(function (index) {
-      $(this).attr('aria-label', 'Ir a la diapositiva ' + (index + 1));
-
-      if ($(this).hasClass('active')) {
-        $(this).attr('aria-current', 'true');
-      } else {
-        $(this).removeAttr('aria-current');
-      }
-    });
-
-  });
-
-});
-</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXXQWTCJ0P"></script>
@@ -77,7 +56,11 @@ $(document).ready(function () {
 
   gtag('config', 'G-VXXQWTCJ0P');
 </script>
-  <!-- Modo Nocturno-->
+
+
+</head>
+<body>
+      <!-- Modo Nocturno-->
 <script>
     const Modosc = () =>{
         let mod = document.getElementById("modo");
@@ -119,9 +102,32 @@ $(document).ready(function () {
         
     }
 </script>
+    <!-- Carrusel nombre a dots para SEO -->
+<script>
+$(document).ready(function () {
 
-</head>
-<body>
+  var $carousel = $('.carrusel');
+
+  // Cuando OWL termina de crear el carrusel
+  $carousel.on('initialized.owl.carousel changed.owl.carousel', function () {
+
+    var $dots = $(this).find('.owl-dots .owl-dot');
+
+    $dots.each(function (index) {
+      $(this).attr('aria-label', 'Ir a la diapositiva ' + (index + 1));
+
+      if ($(this).hasClass('active')) {
+        $(this).attr('aria-current', 'true');
+      } else {
+        $(this).removeAttr('aria-current');
+      }
+    });
+
+  });
+
+});
+</script>
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
