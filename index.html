@@ -67,45 +67,50 @@ gtag('config', 'G-VXXQWTCJ0P');
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
       <!-- Modo Nocturno-->
 <script>
-    const Modosc = () =>{
-        let mod = document.getElementById("modo");
-        let contenido = document.getElementsByClassName("conte-oscuro");
-        let textBlack = document.getElementsByClassName("text-black");
-        let img = document.getElementById("modo-img");
-        let inputblack = document.getElementsByClassName("input-black");
+const Modosc = () =>{
+    let mod = document.getElementById("modo");
+    let contenido = document.getElementsByClassName("conte-oscuro");
+    let textBlack = document.getElementsByClassName("text-black");
+    let img = document.getElementById("modo-img");
+    let inputblack = document.getElementsByClassName("input-black");
 
-            if (mod.value ==="☀️") {
-            mod.value ="🌒" 
-            img.style.boxShadow = "15px 15px 50px #3533cd";  
-              Array.from(contenido).forEach(e => {
-                e.style.background = "#111"; 
-            });
+    if (mod.value === "☀️") {
 
-            Array.from(textBlack).forEach(e => {
-                e.style.color = "white";
-            });
-            
-            Array.from(inputblack).forEach(e => {
-                e.style.color = "white";
-            });
-            
+        mod.value = "🌒";
+        img.style.boxShadow = "15px 15px 50px #3533cd";
 
-        } else if(mod.value ==="🌒"){
-            mod.value ="☀️"; 
-            img.style.boxShadow = "initial";  
-            Array.from(contenido).forEach(e => {
-                e.style.background = "white"; 
-            });  
-            Array.from(textBlack).forEach(e => {
-                e.style.color = "black";
-            });
+        Array.from(contenido).forEach(e => {
+            e.style.background = "#111";
+            e.style.boxShadow = "0px -128px 100px #111";
+        });
 
-            Array.from(inputblack).forEach(e => {
-                e.style.color = "black";
-            });
-        }
-        
+        Array.from(textBlack).forEach(e => {
+            e.style.color = "white";
+        });
+
+        Array.from(inputblack).forEach(e => {
+            e.style.color = "white";
+        });
+
+    } else if(mod.value === "🌒") {
+
+        mod.value = "☀️";
+        img.style.boxShadow = "initial";
+
+        Array.from(contenido).forEach(e => {
+            e.style.background = "white";
+            e.style.boxShadow = "none";
+        });
+
+        Array.from(textBlack).forEach(e => {
+            e.style.color = "black";
+        });
+
+        Array.from(inputblack).forEach(e => {
+            e.style.color = "black";
+        });
     }
+}
 </script>
     <!-- Carrusel nombre a dots para SEO -->
 <script>

@@ -51,15 +51,29 @@ var typed = new Typed(".typing-2", {
 //carrrusel
 
 // carrusel (separado)
+
+
 $(window).on("load", function(){
   $('.carrusel').owlCarousel({
-    margin:20,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1   // Celular
+      },
+      600: {
+        items: 2   // Tablet
+      },
+      1000: {
+        items: 3   // Pantalla grande
+      }
+    }
   });
 });
+
 });
 
 
